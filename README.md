@@ -1,2 +1,2 @@
-# Java-OOP
-About my projects during the OOP course, in Java language
+# Olá! Bem vindo ao repositório Java-OOP
+- Você terá acesso aos meus códigos criados durante meus estudos sobre Java!
