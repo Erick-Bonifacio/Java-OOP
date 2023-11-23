@@ -5,6 +5,8 @@ public class Rectangle {
     public double altura;
     public double largura;
 
+    public Rectangle(){}
+
     public double area(){
         return altura * largura;
     }
@@ -14,6 +16,6 @@ public class Rectangle {
     }
 
     public double diagonal(){
-        return math.sqrt(math.pow(altura) + math.pow(largura));
+        return Math.sqrt((Math.pow(altura, 2) + Math.pow(largura, 2)));
     }
 }
