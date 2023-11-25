@@ -9,14 +9,15 @@ public class Order {
 
     private Date moment;
     private OrderStatus status;
-
+    private Client client;
     private List<OrderItem> items = new ArrayList<>();
 
     public Order(){}
 
-    public Order(Date moment, OrderStatus status) {
+    public Order(Date moment, OrderStatus status, Client client) {
         this.moment = moment;
         this.status = status;
+        this.client = client;
     }
 
     public Date getMoment() {
@@ -43,10 +44,24 @@ public class Order {
         items.remove(item);
     }
 
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public void printItems() {
+        for(OrderItem oi : items){
+            System.out.println(oi);
+        }
+    }
+
     public double total(){
         double sum = 0;
         for(OrderItem i : items){
-            sum += i.getPrice();
+            sum += i.subTotal();
         }
         return sum;
     }
