@@ -1,6 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "Interfaces",
-        "Generics, Set e Map"
+        "Map"
     ]
 }

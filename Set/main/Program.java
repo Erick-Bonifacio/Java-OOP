@@ -29,12 +29,12 @@ public class Program {
         System.out.print("How many students for couse C? ");
         students = sc.nextInt();
         for(int i = 0; i < students; i++){
-            int number = sc.nextInt();
+            int number = sc.nextInt(); 
             hs.add(new Student(number));
         }
 
         System.out.println("Total students: " + hs.size());
-        
+
         sc.close(); 
     }
 }
